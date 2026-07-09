@@ -3,12 +3,12 @@
 {% set configs = [
     {
         "table" : ref('silver_bookings'),
-        "columns" : "*",
+        "columns" : "SILVER_bookings.*",
         "alias": "SILVER_bookings"     
     },
     {
         "table" : ref('silver_listings'),
-        "columns" : "SILVER_listings.HOST_ID,SILVER_listings.PROPERTY_TYPE,SILVER_listings.ROOM_TYPE,SILVER_listings.CITY,SILVER_listings.COUNTRY,SILVER_listings.ACCOMMODATES,SILVER_listings.BEDROOMS,SILVER_listings.BATHROOMS,SILVER_listings.PRICE_PER_NIGHT,silver_listings.PRICE_PER_NIGHT_TAG,SILVER_listings.CREATED_AT",
+        "columns" : "SILVER_listings.HOST_ID,SILVER_listings.PROPERTY_TYPE,SILVER_listings.ROOM_TYPE,SILVER_listings.CITY,SILVER_listings.COUNTRY,SILVER_listings.ACCOMMODATES,SILVER_listings.BEDROOMS,SILVER_listings.BATHROOMS,SILVER_listings.PRICE_PER_NIGHT,silver_listings.PRICE_PER_NIGHT_TAG,SILVER_listings.CREATED_AT AS LISTINGS_CREATED_AT",
         "alias": "SILVER_listings", 
         "join_condition" : "SILVER_bookings.listing_id = SILVER_listings.listing_id"
     },
