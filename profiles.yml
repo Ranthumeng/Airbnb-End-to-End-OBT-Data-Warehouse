@@ -1,0 +1,26 @@
+aws_dbt_snowflake_project:
+  outputs:
+    dev:
+      account: KQIFJYW-OW54786
+      database: AIRBNB
+      password: Ranthumeng@123
+      role: ACCOUNTADMIN
+      schema: dbt_schema
+      threads: 1
+      type: snowflake
+      user: RANTHUMENG
+      warehouse: COMPUTE_WH
+  target: dev
+ins_dbt:
+  outputs:
+    dev:
+      account: KQIFJYW-OW54786
+      database: insurance
+      password: Ranthumeng@123
+      role: ACCOUNTADMIN
+      schema: analytics
+      threads: 1
+      type: snowflake
+      user: RANTHUMENG
+      warehouse: compute_wh
+  target: dev
