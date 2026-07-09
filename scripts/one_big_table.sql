@@ -1,3 +1,5 @@
+#Metadata pipeline
+    
 {% set configs = [
     {
         "table" : ref('silver_bookings'),
