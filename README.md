@@ -1,6 +1,6 @@
 # Airbnb End-to-End OBT Data Warehouse
 
-A [dbt](https://www.getdbt.com/) project that transforms raw Airbnb operational data (listings, hosts, bookings) into a single analytics-ready **One Big Table (OBT)** on Snowflake, using a Bronze → Silver → Gold medallion architecture.
+A DBT project that transforms raw Airbnb operational data (listings, hosts, bookings) into a single analytics-ready **One Big Table (OBT)** on Snowflake, using a Bronze → Silver → Gold medallion architecture.
 
 ## Architecture
 
