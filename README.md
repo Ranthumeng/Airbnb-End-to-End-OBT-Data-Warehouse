@@ -4,18 +4,7 @@ A [dbt](https://www.getdbt.com/) project that transforms raw Airbnb operational 
 
 ## Architecture
 
-```
-staging (raw source tables)
-        │
-        ▼
-   🥉 Bronze          incremental, 1:1 copy of source, watermarked on CREATED_AT
-        │
-        ▼
-   🥈 Silver           cleaned, typed, and enriched with business logic
-        │
-        ▼
-   🥇 Gold (OBT)        wide, denormalized table joining bookings + listings + hosts
-```
+![architecture](doc/airbnb_dataflow.png)
 
 | Layer | Schema | Materialization | Purpose |
 |---|---|---|---|
