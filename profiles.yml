@@ -1,9 +1,9 @@
 aws_dbt_snowflake_project:
   outputs:
     dev:
-      account: KQIFJYW-OW54786
+      account: [account_name]
       database: AIRBNB
-      password: Ranthumeng@123
+      password: [password]
       role: ACCOUNTADMIN
       schema: dbt_schema
       threads: 1
@@ -14,9 +14,9 @@ aws_dbt_snowflake_project:
 ins_dbt:
   outputs:
     dev:
-      account: KQIFJYW-OW54786
+      account: [account_name]
       database: insurance
-      password: Ranthumeng@123
+      password: [password]
       role: ACCOUNTADMIN
       schema: analytics
       threads: 1
