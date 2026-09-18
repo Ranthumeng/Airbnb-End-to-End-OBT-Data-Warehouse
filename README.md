@@ -4,7 +4,7 @@ A [dbt](https://www.getdbt.com/) project that transforms raw Airbnb operational 
 
 ## Architecture
 
-![architecture](doc/airbnb_dataflow.png)
+![architecture](docs/airbnb_dataflow.png)
 
 | Layer | Schema | Materialization | Purpose |
 |---|---|---|---|
