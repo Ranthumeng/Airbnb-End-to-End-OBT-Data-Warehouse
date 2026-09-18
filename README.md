@@ -10,7 +10,7 @@ A [dbt](https://www.getdbt.com/) project that transforms raw Airbnb operational 
 |---|---|---|---|
 | Bronze | `bronze` | `incremental` | Raw pass-through from `staging` source tables |
 | Silver | `silver` | `incremental` | Cleaning, derived columns, business rules |
-| Gold | `gold` | table (OBT) | One wide, join-free table for reporting/BI |
+| Gold | `gold` | table (OBT) | OBT for reporting/BI |
 
 ## Data sources
 
